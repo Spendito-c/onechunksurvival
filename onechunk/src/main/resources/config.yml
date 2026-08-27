@@ -1,0 +1,40 @@
+# === OneChunkSurvival - Configuration ===
+
+# Prefixe utilise pour nommer le monde prive de chaque joueur (world sera chunk_<uuid>)
+world-prefix: "chunk_"
+
+# Rayon de depart de la zone jouable, en blocs autour de (0,0)
+start-radius: 8
+
+# De combien de blocs le rayon augmente a chaque stade franchi
+radius-increase-per-stage: 4
+
+# XP necessaire pour le stade 1 (par defaut: 3 rondins (3xp) + 5 pierres (5xp) = 8)
+xp-required-base: 8
+
+# XP supplementaire necessaire a chaque stade suivant (stade 2 = base+growth, stade 3 = base+2*growth, ...)
+xp-required-growth: 10
+
+# XP donne par bloc mine (ajoute d'autres blocs si tu veux)
+xp-per-block:
+  OAK_LOG: 1
+  SPRUCE_LOG: 1
+  BIRCH_LOG: 1
+  JUNGLE_LOG: 1
+  ACACIA_LOG: 1
+  DARK_OAK_LOG: 1
+  MANGROVE_LOG: 1
+  CHERRY_LOG: 1
+  STONE: 1
+  COBBLESTONE: 1
+  DEEPSLATE: 1
+  ANDESITE: 1
+  DIORITE: 1
+  GRANITE: 1
+  IRON_ORE: 3
+  COAL_ORE: 2
+  DIAMOND_ORE: 8
+
+messages:
+  stage-up: "&a&lNIVEAU SUPERIEUR ! &7Ta zone passe au stade %stage% (rayon: %radius% blocs)"
+  border-blocked: "&cTu ne peux pas sortir de ta zone pour l'instant ! Mine et progresse pour l'agrandir."

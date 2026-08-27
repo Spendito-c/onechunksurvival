@@ -1,0 +1,11 @@
+name: OneChunkSurvival
+version: 1.0.0
+main: com.pokecraft.onechunk.OneChunkPlugin
+api-version: '1.21'
+author: PokeCraft
+description: Mode survie ou chaque joueur demarre isole dans une petite zone qui s'agrandit en minant et en progressant.
+
+commands:
+  mychunk:
+    description: Affiche les informations sur ta zone de survie.
+    usage: /mychunk
